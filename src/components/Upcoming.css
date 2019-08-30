@@ -1,0 +1,21 @@
+img {
+    min-width: 50vw;
+    max-width: 50vw;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.event-title {
+    font-size: 4vw;
+}
+
+.upcoming-container, .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.date {
+    font-size: 3vw;
+}

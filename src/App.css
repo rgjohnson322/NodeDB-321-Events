@@ -1,33 +1,65 @@
-.App {
-  text-align: center;
+html {
+    background-image: url("https://i.pinimg.com/originals/a9/bc/0f/a9bc0f06cb6127f78de56181a88e89a7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    
+}
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 8vh;
+}
+.invis {
+    background-color: rgba(226, 226, 226, 0.473);
+    width: 89vw;
+    height: 84vh;
+    border-radius: 4%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 6vw;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 7%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+button {
+    background-color:  rgba(0, 0, 0, 0.575);
+    background-size: cover;
+    color:white;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    border: none;
+    width: 20vw;
+    margin: 1%;
+    font-size: 3vw;
+    border-radius: 10px;
+    
+    }
+    button:hover{
+        background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+        background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
