@@ -1,6 +1,4 @@
 const upComings = [
-    {
-    }
 ];
 
 const getUpcoming = (req,res) => {
@@ -20,5 +18,6 @@ const deleteUpcoming = (req, res) => {
 module.exports = {
     getUpcoming,
     addUpcoming,
-    deleteUpcoming
+    deleteUpcoming,
+    upComings
 }

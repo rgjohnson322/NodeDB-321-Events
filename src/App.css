@@ -4,19 +4,16 @@ html {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-
-
-    
 }
 .main {
     display: flex;
     justify-content: center;
-    margin: 8vh;
+    margin: 6vh;
 }
 .invis {
     background-color: rgba(226, 226, 226, 0.473);
     width: 89vw;
-    height: 84vh;
+    height: 88vh;
     border-radius: 4%;
 }
 
@@ -34,7 +31,7 @@ html {
     align-items: center;
 }
 
-nav {
+nav{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -63,3 +60,34 @@ button {
         -webkit-background-clip: text;
         background-clip: text;
     }
+    .delete {
+        display: flex;
+        justify-content: center;
+    }
+    .playbox {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+    }
+    .scroll {
+        height: 60vh;
+        width: 80vw;
+        overflow:auto;
+        margin-top: 2vw;
+        }
+.typing, form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2vw;
+}
+input {
+    height: 4vw;
+    width: 18vw;
+    font-size: 3vw;
+    margin: 1vw
+}

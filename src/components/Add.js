@@ -16,7 +16,6 @@ export default class Add extends Component {
         this.setState({ [e.target.name]: e.target.value });
 }
     render () {
-        console.log(this.state.date)
         return (
             <form
                 onSubmit={e => {
@@ -34,6 +33,7 @@ export default class Add extends Component {
                     });
                 }}
                 >
+                <main className="typing">
                 <input
                     name="image"
                     onChange={this.handleChange}
@@ -52,7 +52,9 @@ export default class Add extends Component {
                     value={this.state.date}
                     placeholder="Date"
                 />
-                <button type="submit">Submit</button>
+
+                </main>
+                <button className="sub" type="submit">Submit</button>
                 </form>
 
 

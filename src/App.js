@@ -3,9 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Upcomings from "./components/Upcomings";
 import Add from "./components/Add";
-
-
-
+import Memories from './components/Memories';
 
 
 class App extends React.Component{
@@ -16,9 +14,10 @@ class App extends React.Component{
       };
     }
     render() {
+      const {section} = this.state
       return (
         
-        <div className="main">
+        <main className="main">
           <section className="invis">
             <Header />
             <nav>
@@ -27,12 +26,13 @@ class App extends React.Component{
               <button onClick={() => this.setState({ section: "memories"})}>MEMORIES</button>
               <button onClick={() => this.setState({ section: "add"})}>NEW</button>
             </nav>
-            {this.state.section === "upcomings" ? <Upcomings /> : null}
-            {this.state.section === "add" ? (
+            {section === "upcomings" ? <Upcomings /> : null}
+            {section === "add" ? (
               <Add changeSection={() => this.setState({ section: 'upcomings'})} />
             ) : null}
+            {section === "memories" ? <Memories /> : null}
           </section>      
-        </div>
+        </main>
         
         );
     };

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Upcoming from "./Upcoming";
 import axios from "axios";
+import DeleteButton from "./DeleteButton";
 
 export default class Upcomings extends Component {
     constructor(props) {
@@ -26,19 +27,28 @@ export default class Upcomings extends Component {
             });
     }
     render() {
-        
+
         return (
-            <div>
+            <section className="playbox">
+            <div className="scroll">
                 {this.state.upcomings.map((upcoming, index) => (
+                    <div >
                     <Upcoming
                         updateUpcomings={this.updateUpcomings}
                         image={upcoming.image}
                         event={upcoming.event}
                         date={upcoming.date}
                         index={index}
-                        />
+                    />
+                    <DeleteButton
+                        path="upcomings"
+                        index={index}
+                        updateFunction= {this.updateUpcomings}
+                    /> 
+                    </div>
                 ))}
             </div>
+            </section>
         )
     }
 }
